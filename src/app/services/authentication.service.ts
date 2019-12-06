@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 export class AuthenticationService {
   private authUrl:string;
   constructor(private httpclient:HttpClient) {
-    this.authUrl="http://localhost:3000/auth/v1";
+    this.authUrl="http://localhost:3000/auth/v1/";
   }
 
   authenticateUser(data) {
