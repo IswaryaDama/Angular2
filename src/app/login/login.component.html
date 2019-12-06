@@ -1,0 +1,32 @@
+<div class="keep-login-container">
+    <form class="login-form"  (ngSubmit)="loginSubmit()">
+        <div class="login-form">
+            <mat-form-field>
+                <input class="username" matInput [formControl]='username'>
+            </mat-form-field>
+
+           <!-- <mat-error *ngIf="loginForm.get('username').dirty && loginForm.get('username').hasError('required')">
+                UserName is required field !!!
+            </mat-error>
+
+            <mat-error *ngIf="loginForm.get('username').dirty && loginForm.get('username').hasError('minlength')">
+                UserName must be of 3 characters !!!
+            </mat-error>-->
+
+            <mat-form-field>
+                <input class="password" matInput type = 'password' [formControl]='password'>
+            </mat-form-field>
+
+           <!-- <mat-error *ngIf="loginForm.get('password').dirty && loginForm.get('password').hasError('required')">
+                Password is required field !!!
+            </mat-error>
+
+            <mat-error *ngIf="loginForm.get('password').dirty && loginForm.get('password').hasError('minlength')">
+                Password must be of 3 characters !!!
+            </mat-error> -->
+
+            <button type="submit" mat-button>Submit</button>
+        </div>
+    </form>
+</div>
+<strong *ngIf="submitMessage" class="error-message">{{submitMessage}}</strong>
