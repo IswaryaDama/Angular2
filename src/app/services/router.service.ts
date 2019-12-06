@@ -7,10 +7,10 @@ export class RouterService {
   constructor(private router:Router) { }
 
   routeToDashboard() {
-  return this.router.navigate(['dashboard']);
+   this.router.navigate(['dashboard']);
   }
 
   routeToLogin() {
-  return this.router.navigate(['login']);  	
+   this.router.navigate(['login']);  	
   }
 }
